@@ -1,5 +1,3 @@
-// let btn=document.getElementById('button');
-//     btn.addEventListener('click',sendemail)
 function sendemail() {
 	Email.send({
         SecureToken : "acb6d62a-77a9-44c0-8cff-5407bc39279e",
@@ -9,9 +7,5 @@ function sendemail() {
         Body : "this is the body"
     }).then(
         (message)=>alert(message)
-        // if(message=='OK')
-        // alert('Message sent successfully!')
-        // else
-        // alert("Sorry! message not sent.")
     );
 }
